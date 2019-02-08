@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bookmark That Site</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body onload="fetchBookmarks()">
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+
+        </nav>
+        <h3 class="primary-color">Bookmarker</h3>
+      </div>
+
+      <div class="jumbotron jumb-back">
+        <h1 class="white">Bookmark Your Favorite Sites</h1>
+        <form id="myForm">
+          <div class="form-group">
+            <label class="primary-color">Site Name</label><br />
+            <input type="text" name="form-control" id="siteName" placeholder="Website Name">
+          </div>
+          <div class="form-group">
+            <label class="primary-color">Site URL</label><br />
+            <input type="text" name="form-control" id="siteURL" placeholder="Website URL">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <div id="bookmarksResults">
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p class="primary-color">&copy; 2016 PandosDev</p>
+      </footer>
+
+    </div> <!-- /container -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
